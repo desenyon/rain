@@ -1,15 +1,20 @@
 # System Collector API
 
-```{eval-rst}
-.. automodule:: core.robust_collector
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
+The `RobustSystemCollector` class provides comprehensive system information collection with graceful fallbacks for missing dependencies.
 
 ## RobustSystemCollector
 
 The main class for collecting system information with graceful fallbacks.
+
+### Class Definition
+
+```python
+class RobustSystemCollector:
+    """A robust system collector that handles missing dependencies."""
+    
+    def __init__(self, config=None):
+        """Initialize the collector with optional configuration."""
+```
 
 ### Methods
 

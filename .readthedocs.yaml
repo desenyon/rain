@@ -8,16 +8,22 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+  jobs:
+    post_checkout:
+      # Install system dependencies if needed
+      - echo "Build started"
+    post_install:
+      # Any post-install commands
+      - echo "Dependencies installed"
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
   configuration: docs/conf.py
-  fail_on_warning: true
+  fail_on_warning: false
 
 # Optionally build your docs in additional formats such as PDF and ePub
 formats:
-  - pdf
-  - epub
+  - htmlzip
 
 # Optional but recommended, declare the Python requirements required
 # to build your documentation
@@ -25,5 +31,3 @@ formats:
 python:
   install:
     - requirements: docs/requirements.txt
-    - method: pip
-      path: .

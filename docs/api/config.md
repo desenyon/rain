@@ -1,15 +1,24 @@
 # Configuration API
 
-```{eval-rst}
-.. automodule:: core.config
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
+The `Config` class provides configuration management for Rain CLI.
 
 ## Config
 
 Configuration management for Rain CLI.
+
+### Class Definition
+
+```python
+@dataclass
+class Config:
+    """Configuration class for Rain CLI with default values."""
+    
+    default_sections: List[str] = field(default_factory=lambda: ["system", "hardware"])
+    max_processes: int = 100
+    refresh_interval: float = 2.0
+    network_timeout: int = 5
+    show_banner: bool = True
+```
 
 ### Class Methods
 

@@ -1,15 +1,20 @@
 # Display Manager API
 
-```{eval-rst}
-.. automodule:: core.display
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
+The `DisplayManager` class handles output formatting and display in various formats.
 
 ## DisplayManager
 
 Handles output formatting and display in various formats.
+
+### Class Definition
+
+```python
+class DisplayManager:
+    """Manages display and output formatting for Rain CLI."""
+    
+    def __init__(self, config=None, console=None):
+        """Initialize the display manager."""
+```
 
 ### Methods
 

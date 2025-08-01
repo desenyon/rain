@@ -1,15 +1,28 @@
 # Exceptions API
 
-```{eval-rst}
-.. automodule:: utils.exceptions
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
+Rain CLI uses a hierarchy of custom exceptions for proper error handling.
 
 ## Exception Hierarchy
 
 Rain CLI uses a hierarchy of custom exceptions for proper error handling.
+
+```python
+class RainError(Exception):
+    """Base exception for all Rain CLI errors."""
+    pass
+
+class ConfigError(RainError):
+    """Raised when configuration errors occur."""
+    pass
+
+class CollectionError(RainError):
+    """Raised when system information collection fails."""
+    pass
+
+class DisplayError(RainError):
+    """Raised when display or output operations fail."""
+    pass
+```
 
 ```
 RainError
