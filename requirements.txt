@@ -1,0 +1,24 @@
+# Rain CLI - Complete Dependencies
+# Core dependencies (required)
+rich>=13.0.0
+click>=8.0.0
+psutil>=5.9.0
+requests>=2.28.0
+
+# Enhanced functionality
+netifaces>=0.11.0
+distro>=1.8.0
+py-cpuinfo>=9.0.0
+
+# GPU monitoring (optional)
+GPUtil>=1.4.0
+pynvml>=11.5.0
+
+# System utilities (optional)
+speedtest-cli>=2.1.3
+uptime>=3.0.1
+
+# Development and testing (optional)
+pytest>=7.0.0
+black>=22.0.0
+isort>=5.10.0
