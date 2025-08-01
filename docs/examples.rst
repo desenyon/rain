@@ -30,7 +30,7 @@ Output example::
    💾 Swap: 2.1 GB / 4.0 GB (52.5% used)
 
 Real-time Monitoring
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Monitor your system in real-time:
 
@@ -45,7 +45,7 @@ This continuously updates the display, useful for:
 - Observing network activity
 
 Machine-Readable Output
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Get JSON output for scripts:
 
@@ -85,7 +85,7 @@ Scripting Examples
 ------------------
 
 System Health Check Script
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -116,7 +116,7 @@ System Health Check Script
    fi
 
 Disk Space Alert
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -127,7 +127,7 @@ Disk Space Alert
    "⚠️  Warning: \(.mountpoint) is \(.usage)% full (\(.free) free)"'
 
 Log System Info
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -145,7 +145,7 @@ Python Integration Examples
 ---------------------------
 
 System Monitor Dashboard
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -178,7 +178,7 @@ System Monitor Dashboard
        monitor_system()
 
 Alert System
-~~~~~~~~~~~
+~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -289,7 +289,7 @@ Dockerfile with Rain CLI
    CMD ["python", "app.py"]
 
 Container Monitoring
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -335,7 +335,7 @@ GitHub Actions Example
              echo '```' >> $GITHUB_STEP_SUMMARY
 
 Jenkins Pipeline
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 .. code-block:: groovy
 
@@ -360,7 +360,7 @@ Jenkins Pipeline
    }
 
 Monitoring Integration
----------------------
+----------------------
 
 Prometheus Exporter
 ~~~~~~~~~~~~~~~~~~~
@@ -401,7 +401,7 @@ Prometheus Exporter
            time.sleep(30)
 
 Grafana Dashboard
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
 
