@@ -2,6 +2,8 @@
 
 A Python CLI application that displays extensive system information in a beautiful, interactive terminal interface.
 
+For extended docs go [here](https://raindsx.readthedocs.io/en/latest/)
+
 ## ✨ Features
 
 * **System Info** : Shows your operating system, computer name, uptime, and system type
