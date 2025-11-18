@@ -4,18 +4,6 @@ A Python CLI application that displays extensive system information in a beautif
 
 For extended docs go [here](https://raindsx.readthedocs.io/en/latest/)
 
-## ✨ Features
-
-* **System Info** : Shows your operating system, computer name, uptime, and system type
-* **Hardware Info** : Displays CPU, RAM, disk, GPU, and battery details, including real-time usage
-* **Network Info** : Lists network interfaces, current connections, IP addresses, and checks if you're online
-* **Running Processes** : Shows all active programs and how much CPU and memory they use
-* **Security Info** : Shows firewall status, open ports, and basic security settings
-* **Sensors** : Displays temperature, fan speeds, and power usage
-* **Python Environment** : Shows your Python version, installed packages, and virtual environment info
-* **Live Monitoring** : Updates system stats in real time with auto-refresh
-* **Export Options** : Allows saving info to files like JSON
-
 ### Installation
 
 1. **Clone the repository:**
@@ -74,7 +62,7 @@ python rain.py --save report.txt
 python rain.py --help
 ```
 
-## 📋 Available Sections
+### Available Sections
 
 - `system` - Operating system and basic information
 - `hardware` - CPU, memory, disk, GPU, and battery
@@ -85,7 +73,7 @@ python rain.py --help
 - `python` - Python environment and installed packages
 - `all` - All available sections
 
-## 🎯 Command Line Options
+### Command Line Options
 
 | Option            | Description                      |
 | ----------------- | -------------------------------- |
@@ -99,17 +87,17 @@ python rain.py --help
 | `--version`     | Show version information         |
 | `--help`        | Show help message                |
 
-## 🔧 Configuration
+### Configuration
 
 Rain can be configured through environment variables or a configuration file:
 
-### Environment Variables
+#### Environment Variables
 
 - `RAIN_LOG_LEVEL`: Set logging level (DEBUG, INFO, WARNING, ERROR)
 - `RAIN_CACHE_DURATION`: Cache duration in seconds
 - `RAIN_NETWORK_TIMEOUT`: Network operation timeout
 
-### Configuration File
+#### Configuration File
 
 Create a JSON configuration file:
 
@@ -126,7 +114,7 @@ Create a JSON configuration file:
 
 Use with `--config config.json`
 
-## 🧪 Testing
+### Testing
 
 Run the comprehensive test suite:
 
@@ -134,6 +122,6 @@ Run the comprehensive test suite:
 python tests.py
 ```
 
-# 📄 License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
